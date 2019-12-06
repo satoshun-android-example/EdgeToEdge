@@ -66,6 +66,8 @@ dependencies {
   implementation GROUPIE
   implementation GROUPIE_DATABINDING
 
+  implementation INSETTER
+
   implementation NAVIGATION
   implementation NAVIGATION_FRAGMENT
   implementation NAVIGATION_UI

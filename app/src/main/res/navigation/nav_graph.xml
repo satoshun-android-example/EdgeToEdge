@@ -9,5 +9,13 @@
     android:name="com.github.satoshun.example.main.MainFragment"
     tools:layout="@layout/main_frag">
 
+    <action
+      android:id="@+id/nav_home_to_window_insets"
+      app:destination="@id/nav_window_insets" />
   </fragment>
+
+  <fragment
+    android:id="@+id/nav_window_insets"
+    android:name="com.github.satoshun.example.main.windowinsets.WindowInsetsFragment"
+    tools:layout="@layout/window_insets_frag" />
 </navigation>

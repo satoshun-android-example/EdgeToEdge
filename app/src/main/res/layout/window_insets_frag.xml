@@ -7,9 +7,14 @@
   tools:ignore="HardcodedText">
 
   <Button
-    android:id="@+id/window_insets"
     android:layout_width="match_parent"
     android:layout_height="64dp"
     android:layout_margin="16dp"
-    android:text="WindowInsets" />
+    android:text="TEST" />
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:layout_margin="16dp"
+    android:text="TEST" />
 </LinearLayout>

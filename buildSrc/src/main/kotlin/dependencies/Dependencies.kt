@@ -5,7 +5,7 @@ const val MIN_SDK = 21
 const val TARGET_SDK = 29
 
 private const val VKOTLIN = "1.3.61"
-private const val VNAVIGATION = "2.2.0-rc01"
+private const val VNAVIGATION = "2.2.0-rc02"
 
 const val ANDROID_PLUGIN = "com.android.tools.build:gradle:3.6.0-beta05"
 const val KOTLIN_PLUGIN = "org.jetbrains.kotlin:kotlin-gradle-plugin:$VKOTLIN"
@@ -26,6 +26,8 @@ const val APPCOMPAT = "androidx.appcompat:appcompat:1.1.0"
 const val RECYCLERVIEW = "androidx.recyclerview:recyclerview:1.0.0"
 const val CONSTRAINTLAYOUT = "androidx.constraintlayout:constraintlayout:2.0.0-beta3"
 const val CARDVIEW = "androidx.cardview:cardview:1.0.0"
+
+const val INSETTER = "dev.chrisbanes:insetter-ktx:0.2.0"
 
 const val FLEXBOX = "com.google.android:flexbox:1.1.0"
 
