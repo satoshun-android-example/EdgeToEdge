@@ -6,15 +6,48 @@
   android:orientation="vertical"
   tools:ignore="HardcodedText">
 
-  <Button
+  <TextView
     android:layout_width="match_parent"
-    android:layout_height="64dp"
-    android:layout_margin="16dp"
-    android:text="TEST" />
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="4dp"
+    android:text="system window insets" />
+
+  <TextView
+    android:id="@+id/window_system_insets"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp" />
 
   <TextView
     android:layout_width="match_parent"
-    android:layout_height="64dp"
-    android:layout_margin="16dp"
-    android:text="TEST" />
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="4dp"
+    android:text="gesture window insets" />
+
+  <TextView
+    android:id="@+id/gesture_system_insets"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp" />
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="4dp"
+    android:text="display cutout" />
+
+  <TextView
+    android:id="@+id/display_cutout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp" />
 </LinearLayout>

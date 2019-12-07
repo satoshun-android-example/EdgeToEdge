@@ -2,7 +2,6 @@ import static dependencies.DependenciesKt.*
 
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 apply plugin: "androidx.navigation.safeargs.kotlin"
 
@@ -15,7 +14,6 @@ android {
     targetSdkVersion TARGET_SDK
     versionCode 1
     versionName "1.0"
-    testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
   }
   buildTypes {
     release {
@@ -29,11 +27,6 @@ android {
   }
   packagingOptions {
     exclude "META-INF/*"
-  }
-  sourceSets {
-    main {
-      res.srcDirs += ["src/main/res-en"]
-    }
   }
   viewBinding {
     enabled = true
@@ -56,15 +49,8 @@ dependencies {
   implementation VIEWMODEL
   implementation LIFECYCLE_RUNTIME
 
-  implementation GLIDE
-
-  implementation WEBKIT
-
   implementation COROUTINE
   implementation UI_COROUTINE
-
-  implementation GROUPIE
-  implementation GROUPIE_DATABINDING
 
   implementation INSETTER
 
@@ -73,7 +59,4 @@ dependencies {
   implementation NAVIGATION_UI
 
   testImplementation JUNIT
-
-  androidTestImplementation TEST_RUNNER
-  androidTestImplementation ESPRESSO
 }

@@ -3,11 +3,14 @@
   xmlns:app="http://schemas.android.com/apk/res-auto"
   android:id="@+id/coordinator"
   android:layout_width="match_parent"
-  android:layout_height="match_parent">
+  android:layout_height="match_parent"
+  android:fitsSystemWindows="true">
 
   <com.google.android.material.appbar.AppBarLayout
+    android:id="@+id/appbar"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true">
 
     <com.google.android.material.appbar.MaterialToolbar
       android:id="@+id/toolbar"
@@ -15,20 +18,13 @@
       android:layout_height="wrap_content" />
   </com.google.android.material.appbar.AppBarLayout>
 
-  <androidx.constraintlayout.widget.ConstraintLayout
+  <androidx.fragment.app.FragmentContainerView
+    android:id="@+id/nav_host_fragment"
+    android:name="androidx.navigation.fragment.NavHostFragment"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <androidx.fragment.app.FragmentContainerView
-      android:id="@+id/nav_host_fragment"
-      android:name="androidx.navigation.fragment.NavHostFragment"
-      android:layout_width="0dp"
-      android:layout_height="0dp"
-      app:defaultNavHost="true"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintLeft_toLeftOf="parent"
-      app:layout_constraintRight_toRightOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
-      app:navGraph="@navigation/nav_graph" />
-  </androidx.constraintlayout.widget.ConstraintLayout>
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    app:defaultNavHost="true"
+    app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+    app:navGraph="@navigation/nav_graph" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
