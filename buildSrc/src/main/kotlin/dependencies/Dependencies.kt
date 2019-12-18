@@ -7,13 +7,13 @@ const val TARGET_SDK = 29
 private const val VKOTLIN = "1.3.61"
 private const val VNAVIGATION = "2.2.0-rc02"
 
-const val ANDROID_PLUGIN = "com.android.tools.build:gradle:3.6.0-beta05"
+const val ANDROID_PLUGIN = "com.android.tools.build:gradle:4.0.0-alpha06"
 const val KOTLIN_PLUGIN = "org.jetbrains.kotlin:kotlin-gradle-plugin:$VKOTLIN"
 const val SAFEARGS_PLUGIN =
   "androidx.navigation:navigation-safe-args-gradle-plugin:$VNAVIGATION"
 const val VERSIONS_PLUGIN = "com.github.ben-manes:gradle-versions-plugin:0.20.0"
 
-private const val VCOUROUTINE = "1.3.2"
+private const val VCOUROUTINE = "1.3.3"
 const val KOTLIN = "org.jetbrains.kotlin:kotlin-stdlib:$VKOTLIN"
 const val COROUTINE = "org.jetbrains.kotlinx:kotlinx-coroutines-core:$VCOUROUTINE"
 const val UI_COROUTINE = "org.jetbrains.kotlinx:kotlinx-coroutines-android:$VCOUROUTINE"
