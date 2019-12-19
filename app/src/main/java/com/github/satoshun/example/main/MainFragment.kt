@@ -17,5 +17,9 @@ class MainFragment : Fragment(R.layout.main_frag) {
     binding.windowInsets.setOnClickListener {
       findNavController().navigate(MainFragmentDirections.navHomeToWindowInsets())
     }
+
+    binding.parentFrame.setOnClickListener {
+      findNavController().navigate(MainFragmentDirections.navHomeToParentFrameLayout())
+    }
   }
 }

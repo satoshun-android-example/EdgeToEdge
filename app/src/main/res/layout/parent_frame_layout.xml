@@ -18,13 +18,18 @@
       android:layout_height="wrap_content" />
   </com.google.android.material.appbar.AppBarLayout>
 
-  <androidx.fragment.app.FragmentContainerView
-    android:id="@+id/nav_host_fragment"
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/container"
     android:name="androidx.navigation.fragment.NavHostFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    app:defaultNavHost="true"
-    app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
-    app:navGraph="@navigation/nav_graph" />
+    app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/app_name"
+      app:layout_constraintTop_toTopOf="parent" />
+  </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

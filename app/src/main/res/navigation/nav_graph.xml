@@ -12,10 +12,20 @@
     <action
       android:id="@+id/nav_home_to_window_insets"
       app:destination="@id/nav_window_insets" />
+
+    <action
+      android:id="@+id/nav_home_to_parent_frame_layout"
+      app:destination="@id/nav_parent_frame_layout" />
   </fragment>
 
   <fragment
     android:id="@+id/nav_window_insets"
     android:name="com.github.satoshun.example.main.windowinsets.WindowInsetsFragment"
     tools:layout="@layout/window_insets_frag" />
+
+  <activity
+    android:id="@+id/nav_parent_frame_layout"
+    android:name="com.github.satoshun.example.main.parentframelayout.ParentFrameLayoutActivity"
+    android:label="@string/app_name"
+    tools:layout="@layout/parent_frame_layout" />
 </navigation>
