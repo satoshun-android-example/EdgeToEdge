@@ -1,4 +1,4 @@
-package com.github.satoshun.example.main.parentframelayout
+package com.github.satoshun.example.main.fitssystemwindow.parentframelayout
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

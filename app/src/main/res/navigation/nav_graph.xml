@@ -29,7 +29,7 @@
 
   <activity
     android:id="@+id/nav_parent_frame_layout"
-    android:name="com.github.satoshun.example.main.parentframelayout.ParentFrameLayoutActivity"
+    android:name="com.github.satoshun.example.main.fitssystemwindow.parentframelayout.ParentFrameLayoutActivity"
     android:label="@string/app_name"
     tools:layout="@layout/parent_frame_layout" />
 
