@@ -16,6 +16,10 @@
     <action
       android:id="@+id/nav_home_to_parent_frame_layout"
       app:destination="@id/nav_parent_frame_layout" />
+
+    <action
+      android:id="@+id/nav_home_to_coordinator"
+      app:destination="@id/nav_coordinator_layout" />
   </fragment>
 
   <fragment
@@ -28,4 +32,10 @@
     android:name="com.github.satoshun.example.main.parentframelayout.ParentFrameLayoutActivity"
     android:label="@string/app_name"
     tools:layout="@layout/parent_frame_layout" />
+
+  <activity
+    android:id="@+id/nav_coordinator_layout"
+    android:name="com.github.satoshun.example.main.fitssystemwindow.coordinatorlayout.CoordinatorLayoutActivity"
+    android:label="@string/app_name"
+    tools:layout="@layout/coordinator_layout_layout" />
 </navigation>
