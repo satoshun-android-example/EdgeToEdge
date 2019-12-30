@@ -31,4 +31,16 @@
     android:layout_height="64dp"
     android:layout_margin="16dp"
     android:text="CoordinatorLayout" />
+
+  <Button
+    android:id="@+id/light_status_bar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="LIGHT Statusbar" />
+
+  <Button
+    android:id="@+id/clear_light_status_bar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="clear LIGHT Statusbar" />
 </LinearLayout>

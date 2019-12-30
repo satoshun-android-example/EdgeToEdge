@@ -5,7 +5,9 @@ import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.github.satoshun.example.R
+import com.github.satoshun.example.clearLightStatusBar
 import com.github.satoshun.example.databinding.MainFragBinding
+import com.github.satoshun.example.setLightStatusBar
 
 class MainFragment : Fragment(R.layout.main_frag) {
   private lateinit var binding: MainFragBinding
@@ -22,6 +24,14 @@ class MainFragment : Fragment(R.layout.main_frag) {
     }
     binding.coordinatorLayout.setOnClickListener {
       findNavController().navigate(MainFragmentDirections.navHomeToCoordinator())
+    }
+
+    binding.lightStatusBar.setOnClickListener {
+      binding.root.setLightStatusBar()
+    }
+
+    binding.clearLightStatusBar.setOnClickListener {
+      binding.root.clearLightStatusBar()
     }
   }
 }
