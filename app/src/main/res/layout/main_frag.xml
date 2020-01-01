@@ -43,4 +43,10 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="clear LIGHT Statusbar" />
+
+  <Button
+    android:id="@+id/edge_to_edge"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Edge to Edge" />
 </LinearLayout>

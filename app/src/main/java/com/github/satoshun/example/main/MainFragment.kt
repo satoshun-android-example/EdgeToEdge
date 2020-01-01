@@ -8,6 +8,7 @@ import com.github.satoshun.example.R
 import com.github.satoshun.example.clearLightStatusBar
 import com.github.satoshun.example.databinding.MainFragBinding
 import com.github.satoshun.example.setLightStatusBar
+import dev.chrisbanes.insetter.setEdgeToEdgeSystemUiFlags
 
 class MainFragment : Fragment(R.layout.main_frag) {
   private lateinit var binding: MainFragBinding
@@ -32,6 +33,12 @@ class MainFragment : Fragment(R.layout.main_frag) {
 
     binding.clearLightStatusBar.setOnClickListener {
       binding.root.clearLightStatusBar()
+    }
+
+    var edgeToEdge = false
+    binding.edgeToEdge.setOnClickListener {
+      edgeToEdge = !edgeToEdge
+      binding.root.setEdgeToEdgeSystemUiFlags(edgeToEdge)
     }
   }
 }
