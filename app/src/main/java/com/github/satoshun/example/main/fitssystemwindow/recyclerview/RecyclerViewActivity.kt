@@ -10,6 +10,7 @@ import com.github.satoshun.example.R
 import com.github.satoshun.example.databinding.RecyclerItemBinding
 import com.github.satoshun.example.databinding.RecyclerViewBinding
 import com.github.satoshun.example.getContentView
+import dev.chrisbanes.insetter.setEdgeToEdgeSystemUiFlags
 
 class RecyclerViewActivity : AppCompatActivity(R.layout.recycler_view) {
   private lateinit var binding: RecyclerViewBinding
@@ -17,6 +18,10 @@ class RecyclerViewActivity : AppCompatActivity(R.layout.recycler_view) {
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
     binding = RecyclerViewBinding.bind(getContentView())
+    setSupportActionBar(binding.toolbar)
+
+    window.decorView.setEdgeToEdgeSystemUiFlags(true)
+//    binding.root.setEdgeToEdgeSystemUiFlags(true)
 
     binding.recycler.layoutManager = LinearLayoutManager(this)
     binding.recycler.adapter = MyAdapter()
@@ -34,10 +39,12 @@ class MyAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     ) {}
   }
 
-  override fun getItemCount(): Int = 1000
+  override fun getItemCount(): Int = 100
 
   override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
     val binding = RecyclerItemBinding.bind(holder.itemView)
     binding.title.text = position.toString()
+    binding.root.setOnClickListener {
+    }
   }
 }
