@@ -24,6 +24,10 @@
     <action
       android:id="@+id/nav_home_to_bottom_navigation"
       app:destination="@id/nav_bottom_navigation" />
+
+    <action
+      android:id="@+id/nav_home_to_recycler_view"
+      app:destination="@id/nav_recycler_view" />
   </fragment>
 
   <fragment
@@ -48,4 +52,10 @@
     android:name="com.github.satoshun.example.main.fitssystemwindow.bottomnavigation.BottomNavigationActivity"
     android:label="@string/app_name"
     tools:layout="@layout/bottom_navigation" />
+
+  <activity
+    android:id="@+id/nav_recycler_view"
+    android:name="com.github.satoshun.example.main.fitssystemwindow.recyclerview.RecyclerViewActivity"
+    android:label="@string/app_name"
+    tools:layout="@layout/recycler_view" />
 </navigation>

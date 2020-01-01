@@ -39,8 +39,9 @@ dependencies {
   implementation MATERIAL
   implementation APPCOMPAT
   implementation CONSTRAINTLAYOUT
-  implementation KTX
+  implementation RECYCLERVIEW
 
+  implementation KTX
   implementation ACTIVITYX
   implementation FRAGMENTX
 

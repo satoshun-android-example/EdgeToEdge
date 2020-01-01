@@ -29,6 +29,9 @@ class MainFragment : Fragment(R.layout.main_frag) {
     binding.bottomNavigation.setOnClickListener {
       findNavController().navigate(MainFragmentDirections.navHomeToBottomNavigation())
     }
+    binding.recyclerView.setOnClickListener {
+      findNavController().navigate(MainFragmentDirections.navHomeToRecyclerView())
+    }
 
     binding.lightStatusBar.setOnClickListener {
       binding.root.setLightStatusBar()
