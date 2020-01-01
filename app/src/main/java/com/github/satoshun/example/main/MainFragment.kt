@@ -26,6 +26,9 @@ class MainFragment : Fragment(R.layout.main_frag) {
     binding.coordinatorLayout.setOnClickListener {
       findNavController().navigate(MainFragmentDirections.navHomeToCoordinator())
     }
+    binding.bottomNavigation.setOnClickListener {
+      findNavController().navigate(MainFragmentDirections.navHomeToBottomNavigation())
+    }
 
     binding.lightStatusBar.setOnClickListener {
       binding.root.setLightStatusBar()

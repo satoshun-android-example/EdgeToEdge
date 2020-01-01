@@ -28,5 +28,9 @@
     <activity
       android:name=".main.fitssystemwindow.coordinatorlayout.CoordinatorLayoutActivity"
       android:label="@string/app_name" />
+
+    <activity
+      android:name=".main.fitssystemwindow.bottomnavigation.BottomNavigationActivity"
+      android:label="@string/app_name" />
   </application>
 </manifest>

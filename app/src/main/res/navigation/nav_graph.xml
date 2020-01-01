@@ -20,6 +20,10 @@
     <action
       android:id="@+id/nav_home_to_coordinator"
       app:destination="@id/nav_coordinator_layout" />
+
+    <action
+      android:id="@+id/nav_home_to_bottom_navigation"
+      app:destination="@id/nav_bottom_navigation" />
   </fragment>
 
   <fragment
@@ -38,4 +42,10 @@
     android:name="com.github.satoshun.example.main.fitssystemwindow.coordinatorlayout.CoordinatorLayoutActivity"
     android:label="@string/app_name"
     tools:layout="@layout/coordinator_layout_layout" />
+
+  <activity
+    android:id="@+id/nav_bottom_navigation"
+    android:name="com.github.satoshun.example.main.fitssystemwindow.bottomnavigation.BottomNavigationActivity"
+    android:label="@string/app_name"
+    tools:layout="@layout/bottom_navigation" />
 </navigation>
