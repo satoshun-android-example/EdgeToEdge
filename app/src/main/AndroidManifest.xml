@@ -36,5 +36,9 @@
     <activity
       android:name=".main.fitssystemwindow.recyclerview.RecyclerViewActivity"
       android:label="@string/app_name" />
+
+    <activity
+      android:name=".main.systemuivisibility.SystemUiVisibilityActivity"
+      android:label="@string/app_name" />
   </application>
 </manifest>

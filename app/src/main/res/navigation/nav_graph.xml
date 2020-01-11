@@ -28,6 +28,10 @@
     <action
       android:id="@+id/nav_home_to_recycler_view"
       app:destination="@id/nav_recycler_view" />
+
+    <action
+      android:id="@+id/nav_home_to_system_ui_visibility"
+      app:destination="@id/nav_system_ui_visibility" />
   </fragment>
 
   <fragment
@@ -58,4 +62,10 @@
     android:name="com.github.satoshun.example.main.fitssystemwindow.recyclerview.RecyclerViewActivity"
     android:label="@string/app_name"
     tools:layout="@layout/recycler_view" />
+
+  <activity
+    android:id="@+id/nav_system_ui_visibility"
+    android:name="com.github.satoshun.example.main.systemuivisibility.SystemUiVisibilityActivity"
+    android:label="@string/app_name"
+    tools:layout="@layout/system_ui_visibility" />
 </navigation>

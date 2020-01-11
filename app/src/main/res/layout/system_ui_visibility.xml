@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <com.google.android.material.appbar.AppBarLayout
+    android:id="@+id/appbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.appbar.MaterialToolbar
+      android:id="@+id/toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+  </com.google.android.material.appbar.AppBarLayout>
+
+  <LinearLayout
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+    <Button
+      android:id="@+id/system_ui_flag_layout_stable"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="SYSTEM_UI_FLAG_LAYOUT_STABLE" />
+
+    <TextView
+      android:id="@+id/system_ui_flag_layout_stable_text"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+
+    <Button
+      android:id="@+id/system_ui_flag_layout_hide_navigation"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION" />
+
+    <TextView
+      android:id="@+id/system_ui_flag_layout_hide_navigation_text"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+  </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

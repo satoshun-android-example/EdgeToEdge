@@ -32,6 +32,9 @@ class MainFragment : Fragment(R.layout.main_frag) {
     binding.recyclerView.setOnClickListener {
       findNavController().navigate(MainFragmentDirections.navHomeToRecyclerView())
     }
+    binding.systemUiVisibility.setOnClickListener {
+      findNavController().navigate(MainFragmentDirections.navHomeToSystemUiVisibility())
+    }
 
     binding.lightStatusBar.setOnClickListener {
       binding.root.setLightStatusBar()
