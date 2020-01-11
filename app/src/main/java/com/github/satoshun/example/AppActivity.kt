@@ -17,5 +17,6 @@ class AppActivity : AppCompatActivity() {
       println("AppActivity: $insets")
       insets
     }
+//    window.decorView.setEdgeToEdgeSystemUiFlags(true)
   }
 }
