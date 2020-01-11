@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
-  android:layout_height="match_parent">
+  android:layout_height="match_parent"
+  tools:ignore="HardcodedText">
 
   <com.google.android.material.appbar.AppBarLayout
     android:id="@+id/appbar"
@@ -41,6 +43,39 @@
 
     <TextView
       android:id="@+id/system_ui_flag_layout_hide_navigation_text"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+
+    <Button
+      android:id="@+id/system_ui_flag_layout_fullscreen"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN" />
+
+    <TextView
+      android:id="@+id/system_ui_flag_layout_fullscreen_text"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+
+    <Button
+      android:id="@+id/system_ui_flag_light_status_bar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="SYSTEM_UI_FLAG_LIGHT_STATUS_BAR" />
+
+    <TextView
+      android:id="@+id/system_ui_flag_light_status_bar_text"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+
+    <Button
+      android:id="@+id/system_ui_flag_light_navigation_bar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR" />
+
+    <TextView
+      android:id="@+id/system_ui_flag_light_navigation_bar_text"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content" />
   </LinearLayout>
