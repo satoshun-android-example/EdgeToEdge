@@ -13,8 +13,18 @@ class AppActivity : AppCompatActivity() {
     setContentView(binding.root)
     setSupportActionBar(binding.toolbar)
 
+    window.decorView.setOnApplyWindowInsetsListener { _, insets ->
+      println("decorView: $insets")
+      insets
+    }
+
     binding.root.setOnApplyWindowInsetsListener { _, insets ->
-      println("AppActivity: $insets")
+      println("root: $insets")
+      insets
+    }
+
+    binding.toolbar.setOnApplyWindowInsetsListener { _, insets ->
+      println("toolbar: $insets")
       insets
     }
 //    window.decorView.setEdgeToEdgeSystemUiFlags(true)

@@ -1,68 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
-  android:layout_height="match_parent"
-  android:orientation="vertical"
-  tools:ignore="HardcodedText">
+  android:layout_height="match_parent">
 
-  <Button
-    android:id="@+id/window_insets"
+  <LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="64dp"
-    android:layout_margin="16dp"
-    android:text="WindowInsets" />
-
-  <TextView
-    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="fitsSystemWindows" />
+    android:orientation="vertical"
+    tools:ignore="HardcodedText">
 
-  <Button
-    android:id="@+id/parent_frame"
-    android:layout_width="match_parent"
-    android:layout_height="64dp"
-    android:text="Parent FrameLayout" />
+    <Button
+      android:id="@+id/window_insets"
+      android:layout_width="match_parent"
+      android:layout_height="64dp"
+      android:layout_margin="16dp"
+      android:text="WindowInsets" />
 
-  <Button
-    android:id="@+id/coordinator_layout"
-    android:layout_width="match_parent"
-    android:layout_height="64dp"
-    android:text="CoordinatorLayout" />
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="fitsSystemWindows" />
 
-  <Button
-    android:id="@+id/bottom_navigation"
-    android:layout_width="match_parent"
-    android:layout_height="64dp"
-    android:text="BottomNavigation" />
+    <Button
+      android:id="@+id/parent_frame"
+      android:layout_width="match_parent"
+      android:layout_height="64dp"
+      android:text="Parent FrameLayout" />
 
-  <Button
-    android:id="@+id/recycler_view"
-    android:layout_width="match_parent"
-    android:layout_height="64dp"
-    android:text="RecyclerView" />
+    <Button
+      android:id="@+id/coordinator_layout"
+      android:layout_width="match_parent"
+      android:layout_height="64dp"
+      android:text="CoordinatorLayout" />
 
-  <Button
-    android:id="@+id/system_ui_visibility"
-    android:layout_width="match_parent"
-    android:layout_height="64dp"
-    android:text="SystemUiVisibility" />
+    <Button
+      android:id="@+id/bottom_navigation"
+      android:layout_width="match_parent"
+      android:layout_height="64dp"
+      android:text="BottomNavigation" />
 
-  <Button
-    android:id="@+id/light_status_bar"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="LIGHT Statusbar" />
+    <Button
+      android:id="@+id/recycler_view"
+      android:layout_width="match_parent"
+      android:layout_height="64dp"
+      android:text="RecyclerView" />
 
-  <Button
-    android:id="@+id/clear_light_status_bar"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="clear LIGHT Statusbar" />
+    <Button
+      android:id="@+id/system_ui_visibility"
+      android:layout_width="match_parent"
+      android:layout_height="64dp"
+      android:text="SystemUiVisibility" />
 
-  <Button
-    android:id="@+id/edge_to_edge"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Edge to Edge" />
-</LinearLayout>
+    <Button
+      android:id="@+id/light_status_bar"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="LIGHT Statusbar" />
+
+    <Button
+      android:id="@+id/clear_light_status_bar"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="clear LIGHT Statusbar" />
+
+    <Button
+      android:id="@+id/edge_to_edge"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Edge to Edge" />
+
+    <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:autofillHints="TEST"
+      android:inputType="text" />
+  </LinearLayout>
+</ScrollView>
