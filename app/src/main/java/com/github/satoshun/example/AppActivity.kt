@@ -21,11 +21,14 @@ class AppActivity : AppCompatActivity() {
       println("decorView: $insets")
       println("decorView: ${insets.mandatorySystemGestureInsets}")
       println("decorView: ${insets.systemGestureInsets}")
+      println("decorView tappableElementInsets: ${insets.tappableElementInsets}")
+      println("decorView displayCutout: ${insets.displayCutout}")
       insets
     }
 
     binding.root.setOnApplyWindowInsetsListener { _, insets ->
       println("root: $insets")
+      println("root displayCutout: ${insets.displayCutout}")
       insets
     }
 
