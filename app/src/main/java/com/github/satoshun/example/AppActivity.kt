@@ -1,8 +1,12 @@
 package com.github.satoshun.example
 
+import android.graphics.Rect
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.lifecycleScope
 import com.github.satoshun.example.databinding.AppActBinding
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 
 class AppActivity : AppCompatActivity() {
   private lateinit var binding: AppActBinding
@@ -15,6 +19,8 @@ class AppActivity : AppCompatActivity() {
 
     window.decorView.setOnApplyWindowInsetsListener { _, insets ->
       println("decorView: $insets")
+      println("decorView: ${insets.mandatorySystemGestureInsets}")
+      println("decorView: ${insets.systemGestureInsets}")
       insets
     }
 
@@ -28,5 +34,14 @@ class AppActivity : AppCompatActivity() {
       insets
     }
 //    window.decorView.setEdgeToEdgeSystemUiFlags(true)
+
+    lifecycleScope.launch {
+      delay(5000)
+      window.decorView.setSystemGestureExclusionRects(
+        listOf(
+          Rect(0, 0, 200, 500)
+        )
+      )
+    }
   }
 }
