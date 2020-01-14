@@ -1,10 +1,7 @@
 package com.github.satoshun.example
 
-import android.graphics.Insets
 import android.graphics.Rect
 import android.os.Bundle
-import android.view.DisplayCutout
-import android.view.WindowInsets
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.github.satoshun.example.databinding.AppActBinding
