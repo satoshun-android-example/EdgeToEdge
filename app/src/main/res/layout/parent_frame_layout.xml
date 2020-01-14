@@ -3,7 +3,6 @@
   xmlns:app="http://schemas.android.com/apk/res-auto"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
-  android:fitsSystemWindows="true"
   android:orientation="vertical">
 
   <com.google.android.material.appbar.AppBarLayout
@@ -24,10 +23,30 @@
     android:layout_height="match_parent"
     app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
 
-    <TextView
+    <LinearLayout
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:text="@string/app_name"
-      app:layout_constraintTop_toTopOf="parent" />
+      app:layout_constraintTop_toTopOf="parent">
+
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:text="1" />
+    </LinearLayout>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/app_name"
+      app:layout_constraintTop_toTopOf="parent">
+
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:text="2" />
+    </LinearLayout>
   </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>
