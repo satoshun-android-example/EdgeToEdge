@@ -15,5 +15,8 @@ class FullscreenVideoActivity : AppCompatActivity(R.layout.fullscreen_video) {
     binding = FullscreenVideoBinding.bind(getContentView())
 
     binding.root.setEdgeToEdgeSystemUiFlags(true)
+    binding.coordinator.setOnApplyWindowInsetsListener { v, insets ->
+      insets
+    }
   }
 }

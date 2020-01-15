@@ -21,7 +21,6 @@ class RecyclerViewActivity : AppCompatActivity(R.layout.recycler_view) {
     setSupportActionBar(binding.toolbar)
 
     window.decorView.setEdgeToEdgeSystemUiFlags(true)
-//    binding.root.setEdgeToEdgeSystemUiFlags(true)
 
     binding.recycler.layoutManager = LinearLayoutManager(this)
     binding.recycler.adapter = MyAdapter()
