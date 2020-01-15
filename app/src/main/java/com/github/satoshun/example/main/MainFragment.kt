@@ -17,6 +17,9 @@ class MainFragment : Fragment(R.layout.main_frag) {
     super.onViewCreated(view, savedInstanceState)
     binding = MainFragBinding.bind(view)
 
+    binding.fullScreenVideo.setOnClickListener {
+      findNavController().navigate(MainFragmentDirections.navHomeToFullScreenVideo())
+    }
     binding.windowInsets.setOnClickListener {
       findNavController().navigate(MainFragmentDirections.navHomeToWindowInsets())
     }
