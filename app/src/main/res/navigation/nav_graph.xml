@@ -36,6 +36,10 @@
     <action
       android:id="@+id/nav_home_to_system_ui_visibility"
       app:destination="@id/nav_system_ui_visibility" />
+
+    <action
+      android:id="@+id/nav_home_to_drawer_layout"
+      app:destination="@id/nav_drawer_layout" />
   </fragment>
 
   <fragment
@@ -76,6 +80,12 @@
   <activity
     android:id="@+id/nav_system_ui_visibility"
     android:name="com.github.satoshun.example.main.systemuivisibility.SystemUiVisibilityActivity"
+    android:label="@string/app_name"
+    tools:layout="@layout/system_ui_visibility" />
+
+  <activity
+    android:id="@+id/nav_drawer_layout"
+    android:name="com.github.satoshun.example.main.drawerlayout.DrawerLayoutActivity"
     android:label="@string/app_name"
     tools:layout="@layout/system_ui_visibility" />
 </navigation>

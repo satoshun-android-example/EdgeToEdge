@@ -11,12 +11,14 @@ import com.github.satoshun.example.setLightStatusBar
 import dev.chrisbanes.insetter.setEdgeToEdgeSystemUiFlags
 
 class MainFragment : Fragment(R.layout.main_frag) {
-  private lateinit var binding: MainFragBinding
+  private val binding: MainFragBinding get() = MainFragBinding.bind(view!!)
 
   override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
     super.onViewCreated(view, savedInstanceState)
-    binding = MainFragBinding.bind(view)
 
+    binding.drawerLayout.setOnClickListener {
+      findNavController().navigate(MainFragmentDirections.navHomeToDrawerLayout())
+    }
     binding.fullScreenVideo.setOnClickListener {
       findNavController().navigate(MainFragmentDirections.navHomeToFullScreenVideo())
     }
