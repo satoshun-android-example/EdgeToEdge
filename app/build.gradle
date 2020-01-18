@@ -43,6 +43,7 @@ dependencies {
   implementation APPCOMPAT
   implementation CONSTRAINTLAYOUT
   implementation RECYCLERVIEW
+  implementation DRAWERVIEW
 
   implementation KTX
   implementation ACTIVITYX

@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.github.satoshun.example.databinding.AppActBinding
+import dev.chrisbanes.insetter.setEdgeToEdgeSystemUiFlags
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
@@ -40,7 +41,6 @@ class AppActivity : AppCompatActivity() {
       println("toolbar: $insets")
       insets
     }
-//    window.decorView.setEdgeToEdgeSystemUiFlags(true)
 
     lifecycleScope.launch {
       delay(5000)
@@ -50,5 +50,7 @@ class AppActivity : AppCompatActivity() {
         )
       )
     }
+
+    window.decorView.setEdgeToEdgeSystemUiFlags(true)
   }
 }

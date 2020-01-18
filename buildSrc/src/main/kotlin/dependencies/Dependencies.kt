@@ -26,6 +26,7 @@ const val APPCOMPAT = "androidx.appcompat:appcompat:1.1.0"
 const val RECYCLERVIEW = "androidx.recyclerview:recyclerview:1.1.0"
 const val CONSTRAINTLAYOUT = "androidx.constraintlayout:constraintlayout:2.0.0-beta3"
 const val CARDVIEW = "androidx.cardview:cardview:1.0.0"
+const val DRAWERVIEW = "androidx.drawerlayout:drawerlayout:1.0.0"
 
 const val INSETTER = "dev.chrisbanes:insetter-ktx:0.2.0"
 

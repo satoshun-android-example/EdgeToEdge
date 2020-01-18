@@ -3,13 +3,13 @@
   xmlns:app="http://schemas.android.com/apk/res-auto"
   android:id="@+id/coordinator"
   android:layout_width="match_parent"
-  android:layout_height="match_parent"
-  android:fitsSystemWindows="true">
+  android:layout_height="match_parent">
 
   <com.google.android.material.appbar.AppBarLayout
     android:id="@+id/appbar"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true">
 
     <com.google.android.material.appbar.MaterialToolbar
       android:id="@+id/toolbar"
@@ -22,7 +22,6 @@
     android:name="androidx.navigation.fragment.NavHostFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
     app:defaultNavHost="true"
     app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
     app:navGraph="@navigation/nav_graph" />
