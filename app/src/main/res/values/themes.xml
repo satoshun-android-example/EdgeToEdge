@@ -16,4 +16,15 @@
     <!--    <item name="android:navigationBarColor">#66000000</item>-->
     <item name="android:navigationBarColor">@android:color/transparent</item>
   </style>
+
+  <style name="AppTheme.ActionBar" parent="Base.AppTheme">
+    <item name="android:statusBarColor">#B3FFFFFF</item>
+    <!--    <item name="android:statusBarColor">@android:color/transparent</item>-->
+
+    <!--    <item name="android:navigationBarColor">#66000000</item>-->
+    <item name="android:navigationBarColor">@android:color/transparent</item>
+
+    <item name="windowActionBar">true</item>
+    <item name="windowNoTitle">false</item>
+  </style>
 </resources>
