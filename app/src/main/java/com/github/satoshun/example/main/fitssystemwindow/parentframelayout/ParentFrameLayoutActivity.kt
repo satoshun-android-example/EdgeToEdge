@@ -1,5 +1,6 @@
 package com.github.satoshun.example.main.fitssystemwindow.parentframelayout
 
+import android.graphics.Color
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.github.satoshun.example.R
@@ -15,6 +16,9 @@ class ParentFrameLayoutActivity : AppCompatActivity(R.layout.parent_frame_layout
     binding = ParentFrameLayoutBinding.bind(getContentView())
     setSupportActionBar(binding.toolbar)
 
-    binding.root.setEdgeToEdgeSystemUiFlags(true)
+    window.statusBarColor = Color.BLUE
+    window.navigationBarColor = Color.BLUE
+
+    window.decorView.setEdgeToEdgeSystemUiFlags(true)
   }
 }
