@@ -30,7 +30,7 @@ const val DRAWERVIEW = "androidx.drawerlayout:drawerlayout:1.0.0"
 
 const val INSETTER = "dev.chrisbanes:insetter-ktx:0.2.0"
 
-const val MATERIAL = "com.google.android.material:material:1.1.0-beta02"
+const val MATERIAL = "com.google.android.material:material:1.1.0-rc02"
 
 const val NAVIGATION = "androidx.navigation:navigation-common-ktx:$VNAVIGATION"
 const val NAVIGATION_FRAGMENT = "androidx.navigation:navigation-fragment-ktx:$VNAVIGATION"
