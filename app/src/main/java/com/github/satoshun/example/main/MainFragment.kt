@@ -16,6 +16,9 @@ class MainFragment : Fragment(R.layout.main_frag) {
   override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
     super.onViewCreated(view, savedInstanceState)
 
+    binding.padding.setOnClickListener {
+      findNavController().navigate(MainFragmentDirections.navHomeToPadding())
+    }
     binding.drawerLayout.setOnClickListener {
       findNavController().navigate(MainFragmentDirections.navHomeToDrawerLayout())
     }

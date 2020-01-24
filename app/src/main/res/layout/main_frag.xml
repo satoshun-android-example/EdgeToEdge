@@ -11,6 +11,12 @@
     tools:ignore="HardcodedText">
 
     <Button
+      android:id="@+id/padding"
+      android:layout_width="match_parent"
+      android:layout_height="64dp"
+      android:text="Padding" />
+
+    <Button
       android:id="@+id/drawer_layout"
       android:layout_width="match_parent"
       android:layout_height="64dp"

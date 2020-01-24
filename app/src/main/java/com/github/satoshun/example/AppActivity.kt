@@ -1,8 +1,10 @@
 package com.github.satoshun.example
 
 import android.graphics.Rect
+import android.os.Build
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.ViewCompat
 import androidx.lifecycle.lifecycleScope
 import com.github.satoshun.example.databinding.AppActBinding
 import dev.chrisbanes.insetter.setEdgeToEdgeSystemUiFlags
@@ -18,7 +20,7 @@ class AppActivity : AppCompatActivity() {
     setContentView(binding.root)
     setSupportActionBar(binding.toolbar)
 
-    window.decorView.setOnApplyWindowInsetsListener { _, insets ->
+    ViewCompat.setOnApplyWindowInsetsListener(window.decorView) { _, insets ->
       println("decorView: $insets")
       println("decorView systemWindowInsets: ${insets.systemWindowInsets}")
       println("decorView stableInsets: ${insets.stableInsets}")
@@ -31,24 +33,24 @@ class AppActivity : AppCompatActivity() {
       insets
     }
 
-    binding.root.setOnApplyWindowInsetsListener { _, insets ->
+    ViewCompat.setOnApplyWindowInsetsListener(binding.root) { _, insets ->
       println("root: $insets")
       println("root displayCutout: ${insets.displayCutout}")
       insets
     }
 
-    binding.toolbar.setOnApplyWindowInsetsListener { _, insets ->
+    ViewCompat.setOnApplyWindowInsetsListener(binding.toolbar) { _, insets ->
       println("toolbar: $insets")
       insets
     }
 
     lifecycleScope.launch {
       delay(5000)
-      window.decorView.setSystemGestureExclusionRects(
-        listOf(
+      if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+        window.decorView.systemGestureExclusionRects = listOf(
           Rect(0, 0, 200, 500)
         )
-      )
+      }
     }
 
     window.decorView.setEdgeToEdgeSystemUiFlags(true)
