@@ -1,8 +1,8 @@
 package com.github.satoshun.example.main.fitssystemwindow.parentframelayout
 
-import android.graphics.Color
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.updatePadding
 import com.github.satoshun.example.R
 import com.github.satoshun.example.databinding.ParentFrameLayoutBinding
 import com.github.satoshun.example.getContentView
@@ -16,9 +16,14 @@ class ParentFrameLayoutActivity : AppCompatActivity(R.layout.parent_frame_layout
     binding = ParentFrameLayoutBinding.bind(getContentView())
     setSupportActionBar(binding.toolbar)
 
-    window.statusBarColor = Color.BLUE
-    window.navigationBarColor = Color.BLUE
+//    window.statusBarColor = Color.BLUE
+//    window.navigationBarColor = Color.BLUE
 
     window.decorView.setEdgeToEdgeSystemUiFlags(true)
+
+    binding.appbar.setOnApplyWindowInsetsListener { v, insets ->
+      binding.appbar.updatePadding(top = insets.systemWindowInsetTop * 2)
+      insets.consumeSystemWindowInsets()
+    }
   }
 }

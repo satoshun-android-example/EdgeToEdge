@@ -17,15 +17,15 @@ class FullscreenVideoActivity : AppCompatActivity(R.layout.fullscreen_video) {
 
 //    window.decorView.setEdgeToEdgeSystemUiFlags(true)
 
-    window.decorView.systemUiVisibility = (
-      View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION or
-        View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN or
-        View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+    binding.root.systemUiVisibility = 0
+    binding.root.systemUiVisibility =
+      View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN or
+        View.SYSTEM_UI_FLAG_LAYOUT_STABLE or
+        View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
 //        View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR or
 //        View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
-      )
 
-    binding.coordinator.setOnApplyWindowInsetsListener { v, insets ->
+    binding.root.setOnApplyWindowInsetsListener { v, insets ->
       Log.d("FullscreenVideoActivity", insets.toString())
       insets
     }
