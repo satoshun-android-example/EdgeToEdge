@@ -1,5 +1,6 @@
 package com.github.satoshun.example.main.fitssystemwindow.bottomnavigation
 
+import android.graphics.Color
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.github.satoshun.example.R
@@ -17,6 +18,8 @@ class BottomNavigationActivity : AppCompatActivity(R.layout.bottom_navigation) {
 
 //    binding.root.systemUiVisibility = View.SYSTEM_UI_FLAG_LAYOUT_STABLE or
 //      View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+
+    window.navigationBarColor = Color.TRANSPARENT
     window.decorView.setEdgeToEdgeSystemUiFlags(true)
 
 //    binding.bottom.setOnApplyWindowInsetsListener { v, insets ->
