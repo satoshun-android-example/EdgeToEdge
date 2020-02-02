@@ -31,8 +31,8 @@ class FullscreenVideoActivity : AppCompatActivity(R.layout.fullscreen_video) {
     view.systemUiVisibility = view.systemUiVisibility or
       View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR
 
-//    window.statusBarColor = Color.BLUE
-    window.navigationBarColor = Color.WHITE
+    window.statusBarColor = Color.TRANSPARENT
+    window.navigationBarColor = Color.TRANSPARENT
 
     binding.root.setOnApplyWindowInsetsListener { v, insets ->
       Log.d("FullscreenVideoActivity", insets.toString())
