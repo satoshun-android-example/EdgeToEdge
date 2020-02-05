@@ -25,11 +25,11 @@ class FullscreenVideoActivity : AppCompatActivity(R.layout.fullscreen_video) {
         View.SYSTEM_UI_FLAG_LAYOUT_STABLE or
         View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
 
-    view.systemUiVisibility = view.systemUiVisibility or
-      View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
+//    view.systemUiVisibility = view.systemUiVisibility or
+//      View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
 
-    view.systemUiVisibility = view.systemUiVisibility or
-      View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR
+//    view.systemUiVisibility = view.systemUiVisibility or
+//      View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR
 
     window.statusBarColor = Color.TRANSPARENT
     window.navigationBarColor = Color.TRANSPARENT

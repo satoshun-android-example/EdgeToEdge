@@ -8,5 +8,8 @@
     <!--    <item name="android:navigationBarColor">#B3FFFFFF</item>-->
     <!--    <item name="android:navigationBarColor">#66000000</item>-->
     <item name="android:navigationBarColor">@android:color/transparent</item>
+
+    <item name="android:enforceNavigationBarContrast">true</item>
+    <item name="android:enforceStatusBarContrast">true</item>
   </style>
 </resources>
