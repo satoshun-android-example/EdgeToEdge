@@ -5,7 +5,7 @@ const val MIN_SDK = 21
 const val TARGET_SDK = 29
 
 private const val VKOTLIN = "1.3.61"
-private const val VNAVIGATION = "2.2.0-rc02"
+private const val VNAVIGATION = "2.2.0"
 
 const val ANDROID_PLUGIN = "com.android.tools.build:gradle:4.0.0-alpha09"
 const val KOTLIN_PLUGIN = "org.jetbrains.kotlin:kotlin-gradle-plugin:$VKOTLIN"
@@ -19,8 +19,8 @@ const val COROUTINE = "org.jetbrains.kotlinx:kotlinx-coroutines-core:$VCOUROUTIN
 const val UI_COROUTINE = "org.jetbrains.kotlinx:kotlinx-coroutines-android:$VCOUROUTINE"
 
 const val KTX = "androidx.core:core-ktx:1.2.0-rc01"
-const val ACTIVITYX = "androidx.activity:activity-ktx:1.1.0-rc03"
-const val FRAGMENTX = "androidx.fragment:fragment-ktx:1.2.0-rc03"
+const val ACTIVITYX = "androidx.activity:activity-ktx:1.1.0"
+const val FRAGMENTX = "androidx.fragment:fragment-ktx:1.2.0e"
 
 const val APPCOMPAT = "androidx.appcompat:appcompat:1.1.0"
 const val RECYCLERVIEW = "androidx.recyclerview:recyclerview:1.1.0"
@@ -30,17 +30,17 @@ const val DRAWERVIEW = "androidx.drawerlayout:drawerlayout:1.0.0"
 
 const val INSETTER = "dev.chrisbanes:insetter-ktx:0.2.0"
 
-const val MATERIAL = "com.google.android.material:material:1.1.0-rc02"
+const val MATERIAL = "com.google.android.material:material:1.1.0"
 
 const val NAVIGATION = "androidx.navigation:navigation-common-ktx:$VNAVIGATION"
 const val NAVIGATION_FRAGMENT = "androidx.navigation:navigation-fragment-ktx:$VNAVIGATION"
 const val NAVIGATION_UI = "androidx.navigation:navigation-ui-ktx:$VNAVIGATION"
 
-const val VIEWMODEL = "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0-rc03"
-const val LIVEDATA = "androidx.lifecycle:lifecycle-livedata-ktx:2.2.0-rc03"
-const val LIFECYCLE_COMPILER = "androidx.lifecycle:lifecycle-compiler:2.0.0"
-const val LIFECYCLE_EXTENSIONS = "androidx.lifecycle:lifecycle-extensions:2.2.0-rc03"
-const val LIFECYCLE_RUNTIME = "androidx.lifecycle:lifecycle-runtime-ktx:2.2.0-rc03"
+const val VIEWMODEL = "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0"
+const val LIVEDATA = "androidx.lifecycle:lifecycle-livedata-ktx:2.2.0"
+const val LIFECYCLE_COMPILER = "androidx.lifecycle:lifecycle-compiler:2.2.0"
+const val LIFECYCLE_EXTENSIONS = "androidx.lifecycle:lifecycle-extensions:2.2.0"
+const val LIFECYCLE_RUNTIME = "androidx.lifecycle:lifecycle-runtime-ktx:2.2.0"
 
 const val EMOJI = "androidx.emoji:emoji:1.0.0"
 const val EMOJI_COMPAT = "androidx.emoji:emoji-appcompat:1.0.0"
