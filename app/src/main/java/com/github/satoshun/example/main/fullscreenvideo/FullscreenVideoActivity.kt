@@ -1,12 +1,12 @@
 package com.github.satoshun.example.main.fullscreenvideo
 
-import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.github.satoshun.example.R
 import com.github.satoshun.example.databinding.FullscreenVideoBinding
 import com.github.satoshun.example.getContentView
+import dev.chrisbanes.insetter.setEdgeToEdgeSystemUiFlags
 
 class FullscreenVideoActivity : AppCompatActivity(R.layout.fullscreen_video) {
   private lateinit var binding: FullscreenVideoBinding
@@ -16,7 +16,7 @@ class FullscreenVideoActivity : AppCompatActivity(R.layout.fullscreen_video) {
     binding = FullscreenVideoBinding.bind(getContentView())
     val view = binding.root
 
-//    window.decorView.setEdgeToEdgeSystemUiFlags(true)
+    window.decorView.setEdgeToEdgeSystemUiFlags(true)
 
 //    binding.root.systemUiVisibility = 0
 //    view.systemUiVisibility =
@@ -30,8 +30,8 @@ class FullscreenVideoActivity : AppCompatActivity(R.layout.fullscreen_video) {
 //    view.systemUiVisibility = view.systemUiVisibility or
 //      View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR
 
-    window.statusBarColor = Color.TRANSPARENT
-    window.navigationBarColor = Color.TRANSPARENT
+//    window.statusBarColor = Color.TRANSPARENT
+//    window.navigationBarColor = Color.TRANSPARENT
 
     binding.root.setOnApplyWindowInsetsListener { v, insets ->
       Log.d("FullscreenVideoActivity", insets.toString())
