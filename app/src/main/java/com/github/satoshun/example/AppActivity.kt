@@ -5,8 +5,10 @@ import android.os.Build
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
+import androidx.core.view.updatePadding
 import androidx.lifecycle.lifecycleScope
 import com.github.satoshun.example.databinding.AppActBinding
+import dev.chrisbanes.insetter.doOnApplyWindowInsets
 import dev.chrisbanes.insetter.setEdgeToEdgeSystemUiFlags
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -31,6 +33,10 @@ class AppActivity : AppCompatActivity() {
 //      insets.consumeSystemWindowInsets()
 //      WindowInsets.Builder(insets).setStableInsets(Insets.of(Rect(100, 100, 100, 100))).build()
       insets
+    }
+
+    binding.root.doOnApplyWindowInsets { view, insets, initialState ->
+      view.updatePadding(top = initialState.paddings.top + insets.systemWindowInsetTop)
     }
 
     ViewCompat.setOnApplyWindowInsetsListener(binding.root) { _, insets ->
