@@ -16,6 +16,9 @@ class MainFragment : Fragment(R.layout.main_frag) {
   override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
     super.onViewCreated(view, savedInstanceState)
 
+    binding.collapsing.setOnClickListener {
+      findNavController().navigate(MainFragmentDirections.navHomeToCollapsing())
+    }
     binding.padding.setOnClickListener {
       findNavController().navigate(MainFragmentDirections.navHomeToPadding())
     }
